@@ -16,6 +16,7 @@ export class PokemonsComponent implements OnInit {
   pokemones : any[] = [];
   conteo : number = 0;
   imagenes : any[] = [];
+  clase : string = "aparecer";
 
   constructor(public consulta:PokemonsService, public router:Router) { 
     this.cargarDatos();
@@ -27,16 +28,6 @@ export class PokemonsComponent implements OnInit {
       this.anterior = this.datos.previous;
       this.siguiente = this.datos.next;
       this.pokemones = this.datos.results;
-
-      this.pokemones.forEach(
-        function(pokemon){
-          console.log(pokemon.name);
-          /*consulta.getPokemon(pokemon.name).subscribe((res: any) => {
-            console.log(res.sprites.front_default);
-          });*/
-        }
-      );
-      
     });
   }
 
@@ -44,12 +35,16 @@ export class PokemonsComponent implements OnInit {
     if(this.anterior!=null){
       this.conteo -= 100;
       this.cargarDatos();
+    }else{
+      alert("No hay información anterior");
     }
   }
   siguienteBloque(){
     if(this.siguiente!=null){
       this.conteo += 100;
       this.cargarDatos();
+    }else{
+      alert("No hay más pokemones para desplegar");
     }
   }
 
