@@ -39,11 +39,7 @@ export class PokemonsComponent implements OnInit {
     });
   }
 
-  recuperarImagen(nombre:string){
-    this.consulta.getPokemon(nombre).subscribe((res: any) => {
-      this.imagenes = res.sprites.front_default;
-    });
-  }
+  
 
   ngOnInit(): void {
   }

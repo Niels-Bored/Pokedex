@@ -11,8 +11,8 @@
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-warning" type="submit">Buscar</button>
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" #busqueda (keyup.enter)="buscarPokemon(busqueda.value)">
+          <button class="btn btn-warning" type="submit" (click)="buscarPokemon(busqueda.value)">Buscar</button>
         </form>
       </div>
     </div>
