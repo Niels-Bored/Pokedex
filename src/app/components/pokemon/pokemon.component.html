@@ -1,8 +1,43 @@
-<section class="informacion">
-    <aside class="derecha">
-        <img src="{{pokemon.sprites.front_default}}">
-    </aside>
-    <aside class="izquierda">
-        <p>Nombre: {{nombre}}</p>
-    </aside>
-</section>
+<div *ngIf="mostrar; else Error">
+    <section class="informacion">
+        <aside class="derecha">
+            <img src="{{pokemon.sprites.front_default}}">
+        </aside>
+        <aside class="izquierda">
+            <div class="contenedor">
+                <p class="lado_izquierdo">Nombre:</p>
+                <p>{{nombre}}</p>
+            </div>
+            <div class="contenedor">
+                <p class="lado_izquierdo">Tipos: </p>
+                <ul>
+                    <li *ngFor="let tipo of tipos">
+                        {{tipo.type.name}}
+                    </li>
+                </ul>
+            </div>
+            <div class="contenedor">
+                <p class="lado_izquierdo">Habilidades: </p>
+                <ul>
+                    <li *ngFor="let habilidad of habilidades">
+                        {{habilidad.ability.name}}
+                    </li>
+                </ul>
+            </div>
+            <div class="contenedor">
+                <p class="lado_izquierdo">Juegos: </p>
+                <ul>
+                    <li *ngFor="let juego of juegos">
+                        {{juego.version.name}}
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </section>    
+</div>
+<ng-template #Error>
+    <div class="centrado">
+        <p class="error">Error! No se encontraron coincidencias para "{{nombre}}"</p>
+        <img class="gif" src="https://c.tenor.com/J6lraJXFl4IAAAAC/pokemon-pikachu.gif">
+    </div>
+</ng-template>
