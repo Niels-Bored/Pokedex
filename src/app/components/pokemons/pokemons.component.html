@@ -1,6 +1,12 @@
+<section class="botones">
+    <button class="boton" (click)="anteriorBloque()">Anterior</button>
+    <button class="boton" (click)="siguienteBloque()">Siguiente</button>
+</section>
 <section class="pokemones">
-    <section class="pokemon" *ngFor="let pokemon of pokemones">
-        <img src="../../../favicon.ico" alt="">
-        <p>{{pokemon.name}}</p>
+    <section *ngFor="let pokemon of pokemones">
+        <div class="pokemon" (click)="buscarPokemon(pokemon.name)">
+            <img src="../../../favicon.ico" alt="">
+            <p>{{pokemon.name}}</p>
+        </div>
     </section>
 </section>

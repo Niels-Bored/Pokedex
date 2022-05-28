@@ -8,8 +8,8 @@ export class PokemonsService {
 
   constructor(public httpClient: HttpClient) { }
 
-  getPokemons() {
-    return this.httpClient.get("https://pokeapi.co/api/v2/pokemon?limit=100");
+  getPokemons(conteo:number) {
+    return this.httpClient.get("https://pokeapi.co/api/v2/pokemon?limit=100&offset="+conteo);
   }
 
   getPokemon(nombre: string) {

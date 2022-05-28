@@ -16,6 +16,7 @@ export class PokemonComponent implements OnInit {
   juegos : any[] = [];
   mostrar : boolean;
   constructor(public activatedRoute:ActivatedRoute, private consulta:PokemonsService) { 
+    this.mostrar=true;
     this.activatedRoute.params.subscribe(params=>{
       this.nombre = params['nombre'];
       this.consulta.getPokemon(params['nombre']).subscribe((res: any) => {
