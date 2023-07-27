@@ -1,27 +1,48 @@
+<div><a href='mailto:abelsotovaldez@gmail.com' target='_blank'>
+                <img src='https://img.shields.io/static/v1?style=for-the-badge&message=Gmail&color=EA4335&logo=Gmail&logoColor=FFFFFF&label=' alt='Gmail' height='30px'/>
+            </a><a href='https://t.me/NielsBored' target='_blank'>
+                <img src='https://img.shields.io/static/v1?style=for-the-badge&message=Telegram&color=26A5E4&logo=Telegram&logoColor=FFFFFF&label=' alt='Telegram' height='30px'/>
+            </a><a href='https://www.superprof.mx/estudiante-ingenieria-sistemas-computacionales-clases-programacion-nivel-preparatoria-universitario.html' target='_blank'>
+                <img src='https://img.shields.io/static/v1?style=for-the-badge&message=Superprof&color=ff6363&logo=Superprof&logoColor=ff6363&label=&fontColor=ff6363' alt='Superprof' height='30px'/>
+            </a><a href='https://github.com/Niels-Bored' target='_blank'>
+                <img src='https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=181717&logo=GitHub&logoColor=FFFFFF&label=' alt='Github' height='30px'/>
+            </a><a href='https://es.fiverr.com/abelsotovaldez?up_rollout=tr' target='_blank'>
+                <img src='https://img.shields.io/static/v1?style=for-the-badge&message=Fiverr&color=222222&logo=Fiverr&logoColor=1DBF73&label=' alt='Fiverr' height='30px'/>
+            </a></div><div align='center'><br><br><img src='https://github.com/Niels-Bored/Pokedex/blob/master/src/pokebola.png?raw=true' alt='Pokedex' height='80px'/>
+
 # Pokedex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
+Visit at: **[niels-bored.github.io/Pokedex/Pokemons](https://niels-bored.github.io/Pokedex/Pokemons)**
 
-## Development server
+I made this as a **technical skill test** for an interview to enter to Sithec company.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Project type: **personal**
 
-## Code scaffolding
+</div><br><details>
+            <summary>Table of Contents</summary>
+            <ol>
+<li><a href='#buildwith'>Build With</a></li>
+<li><a href='#media'>Media</a></li>
+<li><a href='#details'>Details</a></li></ol>
+        </details><br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Build with
 
-## Build
+<div align='center'><a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank'> <img src='https://i.imgur.com/OitgDfl.jpeg' alt='HTML + CSS' title='HTML + CSS' height='50px'/> </a><a href='https://www.typescriptlang.org/' target='_blank'> <img src='https://cdn.svgporn.com/logos/typescript-icon.svg' alt='TypeScript' title='TypeScript' height='50px'/> </a><a href='https://angular.io/' target='_blank'> <img src='https://cdn.svgporn.com/logos/angular-icon.svg' alt='Angular' title='Angular' height='50px'/> </a></div>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Media
 
-## Running unit tests
+![Pokémon List](https://github.com/Niels-Bored/Pokedex/blob/master/images/1.png?raw=true)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Search](https://github.com/Niels-Bored/Pokedex/blob/master/images/2.png?raw=true)
 
-## Running end-to-end tests
+![Pokémon Information](https://github.com/Niels-Bored/Pokedex/blob/master/images/3.png?raw=true)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Details
 
-## Further help
+All the data comes from the **PokéAPI**. You can get a list of 1281 pokemons with a limit of **100 per page**.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To check the pokemon information, you just need to click on the pokéball with its name beneath it.
+
+This project was generated with [Angular CLI] version 13.2.6.
+
